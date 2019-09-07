@@ -48,6 +48,7 @@
 					<a href="#">Social</a>
 				</div>
 			</div> 
+					<li class="nav-item"><a href="#palace" class="nav-link" >Palace</a></li>
           <li class="nav-item"><a href="#donors" class="nav-link" >Donors</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link" >Contact</a></li>
         </ul>
@@ -84,7 +85,7 @@
             <div class="block-18 color-1 align-items-stretch">
               <div class="text">
                 <span>Donation so far</span>
-                <strong class="currency">#</strong>
+                <strong class="currency"> ₦ </strong>
                 <strong class="number" data-number="1438980">0</strong>
                 <span>Amount raised by Sons, Daughters & Friends of Osogbo land</span>
               </div>
@@ -94,7 +95,7 @@
             <div class="block-18 color-2 align-items-stretch">
               <div class="text">
               	<h3 class="mb-4">Donate Money</h3>
-              	<p>Make your contribution to Ataoja Palace Project</p>
+              	<p>Make your contribution to Ataoja Palace Initiative</p>
               	<p><a href="" class="btn btn-white btn-rounded btn btn-white px-3 py-2 mt-2" data-toggle="modal" data-target="#donate-form">
 			  			Donate Now!!!</a>
 				</p>
@@ -224,6 +225,61 @@
     			</div>
     		</div>
     	</div>
+		</section>
+		
+		<section class="ftco-section bg-white" id="palace">
+			<!-- <br> -->
+			<div class="container-fluid">
+			<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-5 heading-section ftco-animate text-center">
+            <h2 class="mb-4">ATAOJA PALACE TOUR</h2>
+        </div>
+      </div>
+			</div>
+    	<div class="d-md-flex">
+	    	<a href="images/cause-2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-2.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/cause-3.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-3.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/cause-4.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-4.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/cause-5.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-5.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+    	</div>
+    	<div class="d-md-flex">
+	    	<a href="images/cause-6.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-6.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/cause-7.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-7.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/cause-8.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-8.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/cause-1.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-1.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    </div>
     </section>
 <!-- Donation Form Modal -->
 
@@ -247,52 +303,51 @@
 		<div class="form-row">
 			<div class="form-group col-md-12 text-left">
 			<label for="donation">Donation</label>
-			<input type="number" class="form-control" id="donation" name="donation" placeholder="900000">
+			<input type="number" class="form-control" id="donation" name="donation" placeholder="900000" required>
 			</div>
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-4 text-left">
-				<label for="title">Title</label>
-				<select id="title" class="form-control" name="title">
-					<option value="Chief" selected>Chief</option>
-					<option value="Mr.">Mr.</option>
-					<option value="Mrs.">Mrs.</option>
-					<option value="Miss.">Miss.</option>
-				</select>
-			</div>
+					<label for="firstName">Title</label>
+					<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Mr., Mrs. Cheif, Prof. etc" required>
+				</div>
 				<div class="form-group col-md-4 text-left">
 					<label for="firstName">First Name</label>
-					<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your name">
+					<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your name" required>
 				</div>
 				<div class="form-group col-md-4 text-left">
 					<label for="lastName">Last Name</label>
-					<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Surname">
+					<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Surname" required>
 				</div>
 				<div class="form-group col-md-6 text-left">
 					<label for="inputEmail4">Email</label>
-					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
 				</div>
 				<div class="form-group col-md-6 text-left">
 					<label for="inputPassword4">Phone Number</label>
-					<input type="text" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+					<input type="text" class="form-control" id="inputPhoneNumber" placeholder="Phone Number" required>
 				</div>
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-4 text-left">
-			<label for="inputState">State</label>
-			<select id="inputState" class="form-control">
-				<option selected>Choose...</option>
-				<option value="1">Osun</option>
+			<label for="selectState">State</label>
+			<select id="selectState" class="form-control">
+				<!-- <option selected>Choose...</option> -->
+				<option value="1" selected>Osun</option>
 				<option value="0">Others</option>
 			</select>
 			</div>
-			<div class="form-group col-md-4 text-left">
-				<label for="lga">L.G.A.</label>
-				<input type="text" class="form-control" id="lga" placeholder="Ifelodun">
+			<div class="form-group col-md-4 text-left" id="sooDiv" style="display:none">
+				<label for="soo">State of Origin</label>
+				<input type="text" class="form-control" id="soo" placeholder="Tell Us Your State" required>
 			</div>
 			<div class="form-group col-md-4 text-left">
+				<label for="lga">L.G.A.</label>
+				<input type="text" class="form-control" id="lga" placeholder="Ifelodun" required>
+			</div>
+			<div class="form-group col-md-4 text-left" id="compoundNameDiv">
 				<label for="compoundName">Compound Name</label>
-				<input type="text" class="form-control" id="compoundName" placeholder="Ile Anisu">
+				<input type="text" class="form-control" id="compoundName" placeholder="Ile Anisu" required>
 			</div>
 		</div>
 	
@@ -474,6 +529,29 @@
 		}
 	}
 	}
+
+$("#selectState").change(function() {
+if ($(this).find(":selected").text().toLowerCase().indexOf('osun') !== -1 ){
+		
+		$("#soo").removeAttr('required');
+		$("#soo").val("");
+		$("#lga").val("");
+		$("#lga").attr("placeholder", "Ifelodun");
+    $("#sooDiv").hide();
+		$("#compoundNameDiv").show();
+    $("#compoundName").attr('required', true);
+} else {
+		
+		$("#sooDiv").show();
+		$("#soo").attr('required', true);
+		$("#compoundNameDiv").hide();
+    $("#compoundName").removeAttr('required');
+		$("#compoundName").val("");
+		$("#lga").val("");
+		$("#lga").attr("placeholder", "Tell Us Your L.G.A.");
+}
+});
+
   </script>
     
   </body>
