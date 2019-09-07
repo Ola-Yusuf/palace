@@ -69,7 +69,7 @@
             <p class="mb-5 color-black" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">&nbsp;</p>
 
             <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-			  <a href="" class="btn btn-white btn-rounded color-black" data-toggle="modal" data-target="#donate-form">
+			  <a href="" class="btn btn-white btn-rounded color-black" data-toggle="modal" data-target="#online-donate-form">
 			  	Donate Now!!!
 			  </a>
             </p>
@@ -94,9 +94,9 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 color-2 align-items-stretch">
               <div class="text">
-              	<h3 class="mb-4">Donate Money</h3>
+              	<h3 class="mb-4">Online Money Donation </h3>
               	<p>Make your contribution to Ataoja Palace Initiative</p>
-              	<p><a href="" class="btn btn-white btn-rounded btn btn-white px-3 py-2 mt-2" data-toggle="modal" data-target="#donate-form">
+              	<p><a href="" class="btn btn-white btn-rounded btn btn-white px-3 py-2 mt-2" data-toggle="modal" data-target="#online-donate-form">
 			  			Donate Now!!!</a>
 				</p>
               </div>
@@ -105,9 +105,10 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 color-3 align-items-stretch">
               <div class="text">
-              	<h3 class="mb-4">Be A Volunteer</h3>
-              	<p>Join the group to support and fast track the progress of this project</p>
-              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
+              	<h3 class="mb-4">Donation Through Bank</h3>
+              	<p>Join the group to support and fast track the progress of this project. </p>
+              	<p><a href="" class="btn btn-white btn-rounded btn btn-white px-3 py-2 mt-2" data-toggle="modal" data-target="#offline-donate-form">
+									Supply Evidence!!!</a></p>
               </div>
             </div>
           </div>
@@ -281,10 +282,11 @@
 	    	</a>
 	    </div>
     </section>
-<!-- Donation Form Modal -->
+
+	<!-- START ONLINE Donation Form Modal -->
 
 <div class="text-center">
-<div class="modal fade" id="donate-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+<div class="modal fade" id="online-donate-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-notify modal-warning modal-lg" role="document">
   <form action="#">
@@ -292,7 +294,7 @@
     <div class="modal-content">
       <!--Header-->
       <div class="modal-header text-center">
-        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Donate</h4>
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Donate Online</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="white-text">&times;</span>
         </button>
@@ -371,7 +373,108 @@
 </div>
 </div>
 
-<!-- Donation Form Modal -->
+<!-- END ONLINE Donation Form Modal -->
+
+
+	<!-- START OFFLINE  Donation Form Modal -->
+
+	<div class="text-center">
+		<div class="modal fade" id="offline-donate-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-notify modal-warning modal-lg" role="document">
+			<form action="#">
+				<!--Content-->
+				<div class="modal-content">
+					<!--Header-->
+					<div class="modal-header text-center">
+						<h4 class="modal-title white-text w-100 font-weight-bold py-2">Evidence Of Donation Through Bank</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" class="white-text">&times;</span>
+						</button>
+					</div>
+		
+					<!--Body-->
+					<div class="modal-body">
+				<div class="form-row">
+					<div class="form-group col-md-12 text-left">
+					<label for="donation">Amount Donated</label>
+					<input type="number" class="form-control" id="donation" name="donation" placeholder="900000" required>
+					</div>
+					<div class="form-group col-md-6 text-left">
+						<label for="inputPassword4">Bank Teller (.jpg, .png, .pdf, .docx, .doc etc.)</label>
+						<input type="file" class="form-control" id="teller" placeholder="Choose file" required>
+					</div>
+					<div class="form-group col-md-6 text-left">
+						<label for="inputPassword4">Date Paid</label>
+						<input type="date" class="form-control" id="datePaid"  required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-4 text-left">
+							<label for="firstName">Title</label>
+							<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Mr., Mrs. Cheif, Prof. etc" required>
+						</div>
+						<div class="form-group col-md-4 text-left">
+							<label for="firstName">First Name</label>
+							<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your name" required>
+						</div>
+						<div class="form-group col-md-4 text-left">
+							<label for="lastName">Last Name</label>
+							<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Surname" required>
+						</div>
+						<div class="form-group col-md-6 text-left">
+							<label for="inputEmail4">Email</label>
+							<input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+						</div>
+						<div class="form-group col-md-6 text-left">
+							<label for="inputPassword4">Phone Number</label>
+							<input type="text" class="form-control" id="inputPhoneNumber" placeholder="Phone Number" required>
+						</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-4 text-left">
+					<label for="selectState">State</label>
+					<select id="selectState1" class="form-control">
+						<!-- <option selected>Choose...</option> -->
+						<option value="1" selected>Osun</option>
+						<option value="0">Others</option>
+					</select>
+					</div>
+					<div class="form-group col-md-4 text-left" id="sooDiv1" style="display:none">
+						<label for="soo">State of Origin</label>
+						<input type="text" class="form-control" id="soo1" placeholder="Tell Us Your State" required>
+					</div>
+					<div class="form-group col-md-4 text-left">
+						<label for="lga">L.G.A.</label>
+						<input type="text" class="form-control" id="lga1" placeholder="Ifelodun" required>
+					</div>
+					<div class="form-group col-md-4 text-left" id="compoundNameDiv1">
+						<label for="compoundName">Compound Name</label>
+						<input type="text" class="form-control" id="compoundName1" placeholder="Ile Anisu" required>
+					</div>
+				</div>
+			
+				<div class="form-group">
+					<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck">
+						Make Me Anonymous
+					</label>
+					</div>
+				</div>
+					</div>
+					<!--Footer-->
+					<div class="modal-footer justify-content-center">
+				<button type="submit" class="btn btn-primary">Submit Evidence</button>
+					</div>
+				</div>
+		</form>
+				<!--/.Content-->
+			</div>
+		</div>
+		</div>
+		
+		<!-- END OFFLINE Donation Form Modal -->
 
 <!-- About The Project Modal -->
 
@@ -549,6 +652,28 @@ if ($(this).find(":selected").text().toLowerCase().indexOf('osun') !== -1 ){
 		$("#compoundName").val("");
 		$("#lga").val("");
 		$("#lga").attr("placeholder", "Tell Us Your L.G.A.");
+}
+});
+
+$("#selectState1").change(function() {
+if ($(this).find(":selected").text().toLowerCase().indexOf('osun') !== -1 ){
+		
+		$("#soo1").removeAttr('required');
+		$("#soo1").val("");
+		$("#lga1").val("");
+		$("#lga1").attr("placeholder", "Ifelodun");
+    $("#sooDiv1").hide();
+		$("#compoundNameDiv1").show();
+    $("#compoundName1").attr('required', true);
+} else {
+		
+		$("#sooDiv1").show();
+		$("#soo1").attr('required', true);
+		$("#compoundNameDiv1").hide();
+    $("#compoundName1").removeAttr('required');
+		$("#compoundName1").val("");
+		$("#lga1").val("");
+		$("#lga1").attr("placeholder", "Tell Us Your L.G.A.");
 }
 });
 
